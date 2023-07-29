@@ -61,7 +61,7 @@ function homepage() {
     embedMap.src = 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d119923.49779575093!2d-57.9994092058858!3d-61.98864025622191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sus!4v1690381611408!5m2!1ses!2sus'
     embedMap.width = '700'
     embedMap.height = '500'
-    embedMap.style = 'border:1px solid rgb(255,158,0)'
+    embedMap.style = 'border:1px solid black'
     embedMap.loading = 'lazy'
     embedMap.referrerPolicy = 'no-referrer-when-downgrade'
     const mapInfo = document.createElement('div')

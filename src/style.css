@@ -135,7 +135,6 @@ li {
 }
 
 .hours-container {
-    border: 1px solid white;
     padding: 40px;
     border-radius: 50px;
     background-color: #FAEDCD;
@@ -166,11 +165,14 @@ li {
 }
 
 .map-container {
+    background-color: #FAEDCD;
+    box-shadow: 0px 0px 15px 5px black;
+    border-radius: 10px;
     min-width: 500px;
     display: flex;
     gap: 24px;
     align-items: flex-end;
-    padding: 20px;
+    padding: 40px;
 }
 
 .map-info {
@@ -402,6 +404,7 @@ button:active {
     .map-container {
         flex-direction: column;
         min-width: 400px;
+        padding: 20px;
     }
 
     .map-info {
@@ -477,6 +480,10 @@ button:active {
 
     .about p {
         min-width: 300px;
+    }
+
+    .map-container {
+        min-width: 260px;
     }
 
     .contact-page p {
