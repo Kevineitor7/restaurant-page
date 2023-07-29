@@ -14,9 +14,9 @@ body {
 }
 
 header {
-    border: 1px solid rgb(90, 88, 88);
-    background: rgb(150, 105, 69);
-    color: white;
+    border-bottom: 1px solid rgb(90, 88, 88);
+    background: #D8D9DA;
+    color: black;
     height: 8vh;
     width: 100%;
     min-height: 70px;
