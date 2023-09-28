@@ -7,6 +7,10 @@
     <script defer src="main.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="node_modules/flickity/dist/flickity.css" media="screen">
+    <script src="node_modules/flickity/dist/flickity.pkgd.min.js"></script>
 </head>
 <body>
     <header>
@@ -20,72 +24,168 @@
         </nav>
     </header>
     <div id="content">
-<!--<div class="homepage">
-        <div class="intro">
-            <h2>Ultimate taste</h2>
-            <h3>Please your palate with an unforgettable meal</h3>
-        </div>
-        <div class="about">
-            <p>99% chance of you coming back again, you just had to be there</p>
-            <img src="sirloin-tacos.jpeg" alt="foto">
-        </div>
-        <div class="hours">
-            <div class="hours-container">
-                <h3>Hours</h3>
-                <ul>
-                    <li>Mon - Closed</li>
-                    <li>Tue - 10a-8p</li>
-                    <li>Wed - 10a-8p</li>
-                    <li>Thu - 10a-8p</li>
-                    <li>Fri - 11a-9p</li>
-                    <li>Sat - 11a-9p</li>
-                    <li>Sun - 10a-9p</li>
-                </ul>
+        <div id="homepage">
+            <div class="intro">
+                <h2 class="reveal-first fade-bottom">Please your palate with an unforgettable meal</h2>
+                <button class="intro-btn reveal-first fade-bottom">See our menu</button>
             </div>
-        </div>
-        <div class="map">
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d119923.49779575093!2d-57.9994092058858!3d-61.98864025622191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sus!4v1690381611408!5m2!1ses!2sus" width="700" height="500" style="border:1px solid rgb(255,158,0);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
-                <div class="map-info">King Georgie Island, Antarctica</div>
+            <div class="reviews">
+                <h2>Reviews</h2>
+                <div class="reviews-body">
+                    <div class="scores reveal fade-left">
+                        <div class="google-score">
+                            <img src="google.svg" alt="google" loading="lazy">
+                            <div class="score-info">
+                                <p>4.6<span style="font-size:2rem;">&starf;</span></p>
+                                <p>(156 reviews)</p>
+                            </div>
+                        </div>
+                        <div class="yelp-score">
+                            <img src="yelp.svg" alt="yelp" loading="lazy">
+                            <div class="score-info">
+                                <p>4.7<span style="font-size:2rem;">&starf;</span></p>
+                                <p>(87 reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonies reveal fade-right" data-flickity='{ "cellAlign": "left", "autoPlay": 10000, 
+                    "wrapAround": true, "pageDots": false, "freeScroll": true, "prevNextButtons": false }'>
+                        <div class="testimony">
+                            <p class="testimony-text">"If you're a steak enthusiast, Furcio is the place to be. Their meat selection is unparalleled, and the tacos are a delightful surprise. A definite five-star experience!"</p>
+                            <p class="testimony-name">Sophia Hernandez</p>
+                        </div>
+                        
+                        <div class="testimony">
+                            <p class="testimony-text">"I'm a taco enthusiast, and I can confidently say that Furcio serves some of the best tacos I've ever had. Their steak options are equally fantastic. A carnivore's paradise!"</p>
+                            <p class="testimony-name">David Martinez</p>
+                        </div>
+                        
+                        <div class="testimony">
+                            <p class="testimony-text">"I can't get enough of the mouthwatering dishes at Furcio. The steaks are cooked to perfection, and the meat selection is unbeatable. Don't miss out on the tacos—they're a revelation!"</p>
+                            <p class="testimony-name">Linda Parker</p>
+                        </div>
+                        
+                        <div class="testimony">
+                            <p class="testimony-text">"I've been searching for the ultimate steakhouse, and I found it at Furcio. The quality of the meat is top-notch, and their tacos are a delightful surprise. Outstanding service too!"</p>
+                            <p class="testimony-name">Antonio Perales</p>
+                        </div>
+                        
+                        <div class="testimony">
+                            <p class="testimony-text">"Furcio exceeded my expectations. The steaks were juicy and tender, and the variety of meats on the menu is impressive. A must-visit for meat lovers like me!"</p>
+                            <p class="testimony-name">Braulio Herrera</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="about">
+                <p class="reveal fade-left">We believe that great food starts with great ingredients. 
+                That's why we are committed to the farm-to-table philosophy. 
+                Our kitchen is stocked with locally sourced, organic produce, 
+                and our menu is a testament to the flavors of the season. 
+                Join us in supporting sustainable agriculture and indulge in dishes that celebrate the richness of our region. 
+                99% chance of you coming back again, you just had to be there.</p>
+                <img class="reveal fade-right" src="about.webp" alt="foto" loading="lazy">
+            </div>
+            <div class="hours">
+                    <ul>
+                        <li>Mon - Closed</li>
+                        <li>Tue - 10a-8p</li>
+                        <li>Wed - 10a-8p</li>
+                        <li>Thu - 10a-8p</li>
+                        <li>Fri - 11a-9p</li>
+                        <li>Sat - 11a-9p</li>
+                        <li>Sun - 10a-9p</li>
+                    </ul>
+            </div>
+            <div class="characteristics">
+                <div class="characteristics-div reveal fade-top">
+                    <img src="steak-speciality.webp" alt="steak the speciality" loading="lazy">
+                    <h2>Steak: Our speciality</h2>
+                    <p>Indulge in our culinary masterpiece – succulent, perfectly grilled steaks. 
+                        Our restaurant's specialty lies in crafting unforgettable steak experiences, 
+                        where every bite is a celebration of flavor and tenderness.</p>
+                </div>
+                <div class="characteristics-div reveal fade-bottom">
+                    <img src="live-events.webp" alt="live events" loading="lazy">
+                    <h2>Live events</h2>
+                    <p>Every Saturday, we're your go-to destination for a variety of live events. 
+                        Our specialty is delivering diverse and thrilling experiences, 
+                        making each weekend a memorable celebration of entertainment and fun.</p>
+                </div>
+                <div class="characteristics-div reveal fade-top">
+                    <img src="family.webp" alt="family" loading="lazy">
+                    <h2>Family friendly</h2>
+                    <p>Our restaurant is a welcoming haven for families. 
+                        With a warm atmosphere and a kid-friendly menu, we're dedicated to creating cherished 
+                        moments for all generations to savor together.</p>
+                </div>
+                <div class="characteristics-div reveal fade-bottom">
+                    <img src="history.webp" alt="history behind" loading="lazy">
+                    <h2>A long history behind</h2>
+                    <p>With a rich history spanning generations, Furcio has stood the test of time. 
+                        Our enduring legacy is a source of pride, and we invite you to dine and celebrate with us.</p>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gallery-pics reveal fade-bottom" data-flickity='{ "cellAlign": "left", "autoPlay": 6000, 
+                "wrapAround": true, "pageDots": false, "freeScroll": true, "prevNextButtons": false, 
+                "lazyLoad": true, "selectedAttraction": 0.0017, "friction": 0.6, "pauseAutoPlayOnHover": false }'>
+                    <img src="https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="pic1" loading="lazy">
+                    <img src="https://media.istockphoto.com/id/1181396290/photo/people-laughing-at-dinner-table.jpg?s=612x612&w=0&k=20&c=6Vyn5ppOp9fLqOeVKL9KCWfNYS69_SchgiOyviVAVuM=" alt="pic2" loading="lazy">
+                    <img src="https://images.pexels.com/photos/18340656/pexels-photo-18340656/free-photo-of-restaurant-dining-room-overlooking-the-sea.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="pic3" loading="lazy">
+                    <img src="https://media.istockphoto.com/id/1268551336/photo/asian-family-dining-and-celebrating-mothers-day-or-birthday.jpg?s=612x612&w=0&k=20&c=-Lp1OQaP5KYEMfwIe_mfo_tYcgENtraFTOkY77eJrwg=" alt="pic4" loading="lazy">
+                    <img src="https://images.pexels.com/photos/8753745/pexels-photo-8753745.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="pic5" loading="lazy">
+                    <img src="https://images.pexels.com/photos/6125665/pexels-photo-6125665.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="pic6" loading="lazy">
+                    <img src="https://images.pexels.com/photos/6018426/pexels-photo-6018426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="pic7" loading="lazy">
+                    <img src="https://media.istockphoto.com/id/862579086/photo/family-enjoying-restaurant.jpg?s=612x612&w=0&k=20&c=FL_eb8NpeUdZPlE_8641PNuWrAGazIgzJm1DAec9VlQ=" alt="pic8" loading="lazy">
+                </div>
+            </div>
+            <div class="map">
+                <div class="map-container">
+                    <div class="map-info reveal fade-left">
+                        <p>555 W 3rd Street, King George Island, Antarctica</p>
+                        <button class="contact-btn">Contact us!</button>
+                    </div>
+                    <iframe class="reveal fade-right" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d119923.49779575093!2d-57.9994092058858!3d-61.98864025622191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sus!4v1690381611408!5m2!1ses!2sus" width="700" height="500" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+                </div>
+            </div> 
         </div> 
-        </div>
-        <div class="menu-page">
+       <div id="menu-page">
             <h2>Exquisite Menu</h2>
-            <div class="menu-item">
+            <div class="menu-item reveal fade-left">
                 <div class="item-info">
                     <p>Sirloin Tacos</p>
                     <p>$11.99 (8pcs)</p>
                 </div>
-                <a href="https://www.pexels.com/photo/steak-tacos-7613568/" target="_blank"><img src="sirloin-tacos.jpeg" alt="foto"></a>
+                <a href="https://www.pexels.com/photo/steak-tacos-7613568/" target="_blank"><img src="sirloin-tacos.webp" alt="foto"></a>
             </div>
-            <div class="menu-item">
+            <div class="menu-item reveal fade-right">
                 <div class="item-info">
                     <p>Sirloin Chuleta</p>
                     <p>$13.99</p>
                 </div>
-                <a href="https://www.pexels.com/photo/grilled-meat-410648/" target="_blank"><img src="chuleta-sirloin.jpeg" alt="foto"></a>            
+                <a href="https://www.pexels.com/photo/grilled-meat-410648/" target="_blank"><img src="chuleta-sirloin.webp" alt="foto"></a>            
             </div>
-            <div class="menu-item">
+            <div class="menu-item reveal fade-left">
                 <div class="item-info">
                     <p>Sirloin Steak with sides</p>
                     <p>$15.99</p>
                 </div>           
-                <a href="https://www.pexels.com/photo/parrillero-de-res-16970732/" target="_blank"><img src="sirloin-steak.jpeg" alt="foto"></a> 
+                <a href="https://www.pexels.com/photo/parrillero-de-res-16970732/" target="_blank"><img src="sirloin-steak.webp" alt="foto"></a> 
             </div>
-            <div class="menu-item">
+            <div class="menu-item reveal fade-right">
                 <div class="item-info">
                     <p>Santisima Trinidad</p>
                     <p>$11.99</p>
                 </div>           
-                <a href="https://www.pexels.com/photo/cooked-food-on-blue-plate-2092507/" target="_blank"><img src="trinidad.jpeg" alt="foto"></a> 
+                <a href="https://www.pexels.com/photo/cooked-food-on-blue-plate-2092507/" target="_blank"><img src="trinidad.webp" alt="foto"></a> 
             </div>
         </div> 
-        <div class="contact-page">
-            <h2>Contact us</h2>
-            <p>Leave us a message with your contact details so we can 
+        <div id="contact-page">
+            <h2 class="reveal fade-bottom">Contact us</h2>
+            <p class="reveal fade-bottom">Leave us a message with your contact details so we can 
                get back to you shortly </p>
-            <div class="form">
+            <div class="form reveal fade-bottom">
                 <form action="" method='get'>
                     <label for="name">Name:</label>
                     <input type="text" name="name" class="input-name" id="name" placeholder="Enter your name" required>
@@ -99,12 +199,13 @@
                     </div>
                 </form>
             </div>
-        </div> -->
+        </div> 
     </div> 
     <footer>
         <div class="footer-container">
             <div class="footer-top">
                 <span>© 2023 Furcio</span>
+                <span style="font-size: 0.8rem;">(This restaurant is not real)</span>
                 <div class="icons">
                     <a class='icon' href="https://www.linkedin.com/in/kevin-campa777/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     <a class='icon' href="https://github.com/Kevineitor7" target="_blank"><i class="fab fa-github"></i></a>
