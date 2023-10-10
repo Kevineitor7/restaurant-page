@@ -10,6 +10,7 @@
 
 body {
     background: linear-gradient(90deg, rgba(80,87,102,1) 0%, rgba(44,48,99,1) 100%);
+    font-family: 'Urbanist', sans-serif;
 }
 
 header {
@@ -24,7 +25,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 999;
-    font-family: 'IBM Plex Serif', serif;
     transition: 500ms background-color ease-in-out 0.1s;
 }
 
@@ -58,10 +58,6 @@ li {
     height: auto;
 }
 
-#homepage {
-    font-family: 'IBM Plex Serif', serif;
-}
-
 .intro {
     height: 93vh;
     display: flex;
@@ -92,24 +88,25 @@ li {
 }
 
 .intro h2 {
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     font-weight: normal;
+    letter-spacing: 0.1rem;
 }
 
 .intro-btn {
     z-index: 100;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
     cursor: pointer;
-    border: 4px groove white;
-    border-radius: 8px;
+    border: 2px groove white;
+    border-radius: 16px;
     font-size: 1.3rem;
     padding: 8px;
     transition: 200ms all ease-in-out;
 }
 
 .intro-btn:hover, .contact-btn:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .intro-btn:active, .contact-btn:active {
@@ -366,15 +363,16 @@ li {
 }
 
 .contact-btn {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.4);
     width: 200px;
     color: white;
     cursor: pointer;
-    border: 4px groove white;
-    border-radius: 8px;
+    border: 2px groove white;
+    border-radius: 16px;
     font-size: 1.2rem;
     padding: 8px;
     transition: 200ms background-color ease-in-out;
+    
 }
 
 footer {
@@ -415,7 +413,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    font-family: 'IBM Plex Serif', serif;
     margin-top: 80px;
 }
 
@@ -477,10 +474,6 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 40px;
-}
-
-#contact-page h2, #contact-page p {
-    font-family: 'IBM Plex Serif', serif;
 }
 
 #contact-page h2 {
